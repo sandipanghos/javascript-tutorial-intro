@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Introduction to javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="tabs.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h2>Introduction to javascript - Tabs</h2>
+    <p>Click on the buttons inside the tabbed menu:</p>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event,'tab-1')">
+        What is JavaScript?
+      </button>
+      <button class="tablinks" onclick="openTab(event,'tab-2')">
+        Mordern javascript
+      </button>
+      <button class="tablinks" onclick="openTab(event,'tab-3')">
+        Why is it called JavaScript?
+      </button>
+    </div>
+    <div id="tab-1" class="tabcontent">
+      <ul>
+        <li>
+          <p>JavaScript was initially created to “make web pages alive”.</p>
+        </li>
+        <li>
+          <p>The programs in this language are called scripts.</p>
+        </li>
+        <li>
+          <p>
+            They can be written right in a web page's HTML and run automatically
+            as the page loads.
+          </p>
+        </li>
+        <li>
+          <p>
+            The Scripts are provided and executed as plain text. So it is light
+            weight and faster.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div id="tab-2" class="tabcontent">
+      <ul>
+        <li>
+          <p>
+            Today, JavaScript can execute not only in the browser, but also on
+            the server, or actually on any device that has a special program
+            called the JavaScript engine.
+          </p>
+        </li>
+        <li>
+          <p>
+            The browser has an embedded engine sometimes called a “JavaScript
+            virtual machine”.
+          </p>
+        </li>
+        <li>
+          <p>
+            Different engines have different “codenames”. For example: 1 V8 - in
+            Chrome, Opera and Edge. 2 SpiderMonkey - in Firefox. 3 There are
+            other codenames like “Chakra” for IE, “JavaScriptCore”, “Nitro” and
+            “SquirrelFish” for Safari, etc.
+          </p>
+        </li>
+        <li>
+          <p>
+            The terms above are good to remember because they are used in
+            developer articles on the internet. We'll use them too. For
+            instance, if a feature X is supported by V8”, then it probably works
+            in Chrome, Opera and Edge.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div id="tab-3" class="tabcontent">
+      <ul>
+        <li>
+          <p>
+            When JavaScript was created, it initially had another name:
+            “LiveScript”.
+          </p>
+        </li>
+        <li>
+          <p>
+            But Java was very popular at that time, so it was decided that
+            positioning a new language as a “younger brother” of Java would
+            help.
+          </p>
+        </li>
+        <li>
+          <p>
+            But as it evolved, JavaScript became a fully independent language
+            with its own specification called ECMAScript, and now it has no
+            relation to Java at all.
+          </p>
+        </li>
+      </ul>
+      <p></p>
+    </div>
+  </body>
+</html>
