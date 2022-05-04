@@ -1,12 +1,26 @@
+:root {
+  --primary-blue: hsl(217, 65%, 54%);
+  --secondary-blue: hsla(217, 65%, 54%, 0.208);
+  --white: #fff;
+  --light-blue: rgb(199, 210, 238);
+  --light-red: rgb(229, 215, 215);
+  --border-color: #ccc;
+}
+body {
+  background-color: var(--secondary-blue);
+  color: rgb(78, 128, 193);
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #fff;
-  background-color: hsl(217, 65%, 54%);
+  border: 1px solid var(--white);
+  background-color: var(--primary-blue);
 }
 
 /* Style the buttons inside the tab */
-.tab button {
+.tab button,
+.tablink {
   background-color: inherit;
   float: left;
   border: none;
@@ -15,29 +29,40 @@
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
-  color: #fff;
+  color: var(--white);
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: rgb(229, 215, 215);
-  color: rgb(78, 128, 193);
-  border: 1px solid rgb(69, 98, 188);
+  background-color: var(--light-blue);
+  color: var(--primary-blue);
+  border: 1px solid var(--secondary-blue);
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #fff;
-  color: rgb(109, 134, 225);
-  border: 1px solid rgb(69, 98, 188);
+  background-color: var(--white);
+  color: var(--primary-blue);
+  border: 1px solid var(--secondary-blue);
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   border-top: none;
-  background-color: rgb(27, 52, 134);
+  background-color: var(--white);
+  color: var(--primary-blue);
+  flex-direction: row;
+}
+
+.tablinks {
   color: #fff;
+  background-color: var(--primary-blue);
+  cursor: pointer;
+  padding: 10px 25px;
+  transition: 0.3s;
+  font-size: 15px;
+  border-radius: 10%;
 }
