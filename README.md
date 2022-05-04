@@ -9,9 +9,9 @@ Javascript
 
 ### What is JavaScript?
 
-JavaScript was initially created to “make web pages alive”. — explain by example
-The programs in this language are called scripts.  - verbal
-They can be written right in a web page’s HTML and run automatically as the page loads.  — explain
+JavaScript was initially created to “make web pages alive”. 
+The programs in this language are called scripts. 
+They can be written right in a web page’s HTML and run automatically as the page loads.  
 Scripts are provided and executed as plain text explain
  . So it is light weight and faster.
 
